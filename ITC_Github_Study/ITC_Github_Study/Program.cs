@@ -1,4 +1,5 @@
 ﻿using System;
+using System;
 
 namespace ITC_Github_Study
 {
@@ -20,7 +21,7 @@ namespace ITC_Github_Study
         {
             int num;
             Console.Write("数字を入力してください ");
-            num = int.Parse(Console.ReadLine());
+            int.TryParse(Console.ReadLine(),out num);
             return num;
         }
     }
